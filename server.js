@@ -7,12 +7,12 @@ require("dotenv").config();
 
 DB();
 
-// app.get("/api", (req, res) => {
-//     res.json({
-//         success: 1,
-//         message: "Listening......"
-//     })
-// })
+app.get("/", (req, res) => {
+    res.json({
+        success: 1,
+        message: "Listening......"
+    })
+})
 
 //we will parse json
 app.use(express.json());
